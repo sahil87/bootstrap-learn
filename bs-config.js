@@ -19,10 +19,13 @@ module.exports = {
             "port": 8080
         }
     },
-    "files": ["basic/*.html", "basic/css/*.css"],
-    "watchOptions": {},
+    "files": ["*.html", "basic/*.html", "css/*.css"],
+    "watchOptions": {
+      usePolling: true
+    },
     "server": {
-      baseDir: "basic"
+      baseDir: "basic",
+      directory: true
     },
     "proxy": false,
     "port": 3000,
@@ -57,7 +60,7 @@ module.exports = {
     "injectChanges": true,
     "startPath": null,
     "minify": true,
-    "host": null,
+    "host": "11.0.0.10",
     "codeSync": true,
     "timestamps": true,
     "clientEvents": [
