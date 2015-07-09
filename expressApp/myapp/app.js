@@ -35,6 +35,7 @@ app.use('/bower_components', express.static(path.join(__dirname, 'bower_componen
 app.use('/', routes);
 app.use('/users', users);
 
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
@@ -55,7 +56,6 @@ if (app.get('env') === 'development') {
     });
   });
 }
-
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
