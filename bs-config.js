@@ -19,12 +19,12 @@ module.exports = {
             "port": 8080
         }
     },
-    "files": ["*.html", "basic/*.html", "css/*.css"],
+    "files": ["basic/*.html", "basic/css/*.css", "basic/css/*.less"],
     "watchOptions": {
       usePolling: true
     },
     "server": {
-      baseDir: "basic",
+      baseDir: ".",
       directory: true
     },
     "proxy": false,

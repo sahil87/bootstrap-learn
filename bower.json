@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap-learn",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sahil87/bootstrap-learn",
+  "description": "To Learn Bootstrap",
+  "main": "basic/scorer.html",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "less.js": "~2.5.1",
+    "jquery": "~2.1.4"
+  }
+}

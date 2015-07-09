@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "scorer.css",
+	"sources": [
+		"scorer.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,KAAM,GADpB",
+	"names": []
+}
