@@ -9,7 +9,7 @@ gulp.task('default', ['browser-sync'], function() {});
 
 gulp.task('browser-sync', ['nodemon'], function() {
   console.log("browser-sync");
-  browserSync.init(require('./bs-config.js'));
+  browserSync.init(require('./browser-sync-config.js'));
 });
 
 gulp.task('nodemon', function(cb) {
