@@ -1,4 +1,3 @@
-
 /*
  |--------------------------------------------------------------------------
  | Browser-sync config file
@@ -19,7 +18,7 @@ module.exports = {
             "port": 8080
         }
     },
-    "files": ["basic/*.html", "basic/css/*.css", "basic/css/*.less"],
+    "files": ["design/*.html", "design/css/*.css"],
     "watchOptions": {
       usePolling: true
     },
