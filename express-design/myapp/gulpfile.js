@@ -1,4 +1,4 @@
-'use strict';
+'use strict';  /* jslint node: true */
 
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
