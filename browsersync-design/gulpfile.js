@@ -7,7 +7,7 @@ var sass = require('gulp-sass');
 
 //gulp.task('default', ['browser-sync'], function() {});
 
-gulp.task('default', ['sass:watch', 'browser-sync']);
+gulp.task('default', ['sass', 'sass:watch', 'browser-sync']);
 
 gulp.task('sass:watch', function () {
   console.log("Starting sass-watch.");
