@@ -15,7 +15,7 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('sass', function () {
-  gulp.src('./design/scss/**/*.scss')
+  gulp.src(['./design/scss/**/*.scss'])
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(gulp.dest('./design/css/'));
 });
