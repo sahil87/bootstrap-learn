@@ -11,7 +11,7 @@
   <link rel="icon" href="images/favicon2.ico">
 
   <title>SportsCafe</title>
-  <link href="../bower_components/pace/themes/orange/pace-theme-loading-bar.css" rel="stylesheet" />
+  <link href="../bower_components/pace/themes/orange/pace-theme-corner-indicator.css" rel="stylesheet" />
   <script src="../bower_components/pace/pace.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,7 +23,7 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto:700,400,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="../bower_components/fullpage.js/jquery.fullPage.css" rel="stylesheet">
-  <link href="../bower_components/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../bower_components/animate.css/animate.css" rel="stylesheet">
   <link href="../bower_components/jquery-collagePlus/css/transitions.css" rel="stylesheet">
   <link href="css/intropage.css" rel="stylesheet">
 
@@ -37,14 +37,16 @@
 
 <body>
   <div id="fullpage">
-    <div class="section text-center" id="page1">
-      <img class="animated fadeIn" id="logo" src="images/logo.png" alt="Logo">
-      <div class="container">
-        <span class="page1-text" id="text1">Real Time</span>
-        <span class="page1-text" id="divider1">.</span>
-        <span class="page1-text" id="text2">All Sports</span>
-        <span class="page1-text" id="divider2">.</span>
-        <span class="page1-text" id="text3">And More</span>
+    <div class="section">
+      <div id="page1">
+        <img class="animated flipInY" id="logo" src="images/logo.png" alt="Logo">
+        <div id="text-container">
+          <div class="page1-text" id="text1">Real Time</div>
+          <div class="page1-text" id="divider1">.</div>
+          <div class="page1-text" id="text2">All Sports</div>
+          <div class="page1-text" id="divider2">.</div>
+          <div class="page1-text" id="text3">And More</div>
+        </div>
       </div>
     </div>
     <div class="section" id="page2">

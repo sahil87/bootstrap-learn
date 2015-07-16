@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
 .collage .image_wrapper {
   /* ensures padding at the bottom of the image is correct */
   vertical-align: bottom;
@@ -12,21 +13,44 @@ body {
   background: url("../images/page1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 
 #page1 #logo {
+  display: block;
   width: 400px;
+  padding-top: 17%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#page1 .container {
-  padding-top: 50px;
-  font-size: 4em;
+#page1 #text-container {
+  position: relative;
+  display: block;
+  //width: 100%;
+  //height: 100%;
+  //padding-top: 50px;
+  font-size: 400%;
   font-weight: bold;
   color: white;
+  height: 100%;
 }
 
 .page1-text {
+//  position: absolute; display: block;
   opacity: 0;
+}
+
+#text1, #text2, #text3, #divider1, #divider2 { position: absolute; display: block; width: 100%; text-align: center }
+#divider1, #divider2 { top: -67px;}
+#text1    { left: -290px; }
+#divider1 { left: -142px; }
+#text2    { left: 0px; }
+#divider2 { left: 142px; }
+#text3    { left: 280px; }
+
+#divider1, #divider2 {
+  font-size: 2em;
 }
 
 #page2 {

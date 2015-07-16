@@ -1,6 +1,6 @@
-var SPORTSCAFE = {};
-SPORTSCAFE.page3Animated = false;
-SPORTSCAFE.page3Animation = function() {
+var SC = {};
+SC.page3Animated = false;
+SC.page3Animation = function() {
   //alert("trying to animate");
   $('.collage').removeWhitespace().collagePlus({
     allowPartialLastRow: true,
@@ -40,27 +40,37 @@ $(document).ready(function() {
       var loadedSlide = $(this);
       if (anchorLink == 'thirdPage') {
         //alert("on third page");
-        SPORTSCAFE.page3Animation();
+        SC.page3Animation();
       } else if (anchorLink == 'firstPage') {
-        setTimeout(SPORTSCAFE.page1Animate, 2000);
+        setTimeout(SC.page1Animate, 200);
+      }
+    },
+    onLeave: function(index, nextIndex, direction) {
+      var leavingSection = $(this);
+      if (index == 1) {
+        SC.testAnim('#text-container',"hinge");
+        setTimeout(function(){
+          $("#text-container").children().addClass("page1-text");
+        }, 500);
       }
     }
   });
 });
 
-$.wait = function(ms) {
-    var defer = $.Deferred();
-    setTimeout(function() { defer.resolve(); }, ms);
-    return defer;
+SC.testAnim = function(element, x) {
+  //alert("Animating with " + element + x);
+  $(element).removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+    $(this).removeClass();
+  });
 };
 
-SPORTSCAFE.page1Animate = function() {
-  $('#text1').addClass("animated fadeInLeft");
-  setTimeout(function(){$('#divider1').addClass("animated fadeIn");}, 1000);
-  setTimeout(function(){$('#text2').addClass("animated fadeInUp");}, 1500);
-  setTimeout(function(){$('#divider2').addClass("animated fadeIn");}, 2500);
-  setTimeout(function(){$('#text3').addClass("animated fadeInRight");}, 3000);
+SC.page1Animate = function() {
+  SC.testAnim('#logo',"flipInY");
+  SC.testAnim('#text1',"slideInLeft");
+  setTimeout(function(){SC.testAnim('#divider1', "bounceInDown");}, 500);
+  setTimeout(function(){SC.testAnim('#text2', "fadeInUp");}, 1000);
+  setTimeout(function(){SC.testAnim('#divider2', "bounceInDown");}, 1500);
+  setTimeout(function(){SC.testAnim('#text3', "slideInRight");}, 2000);
   //$('#text2').wait(5000).addClass("animated fadeIn");
   //$('#text3').wait(2000).addClass("animated fadeIn");
 };
-//setTimeout(SPORTSCAFE.textAnimate, 2000);
