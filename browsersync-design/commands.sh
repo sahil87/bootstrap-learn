@@ -5,4 +5,5 @@
 #bower install
 #npm install
 
-browser-sync start --config browser-sync-config.js
+gulp
+#browser-sync start --config browser-sync-config.js
