@@ -30,20 +30,23 @@ SC.page3Animation = function() {
 //});
 
 $(document).ready(function() {
+  $('body').scrollspy({ target: '#navbar-example' });
   $('#fullpage').fullpage({
-    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
+    anchors: ['sportscafe', 'allsports', 'youridols', 'whyus', 'aboutus'],
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['First', 'Second', 'Third', 'Fourth', 'Fifth'],
+    navigationTooltips: ['SportCafe', 'All Sports', 'Your Idols', 'Why us', 'About US'],
     //afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
     afterLoad: function(anchorLink, index) {
       var loadedSlide = $(this);
-      if (anchorLink == 'thirdPage') {
+      if (anchorLink == 'youridols') {
         //alert("on third page");
         SC.page3Animation();
-      } else if (anchorLink == 'firstPage') {
+      } else if (anchorLink == 'sportscafe') {
         setTimeout(SC.page1Animate, 200);
       }
+      $("#navbar").find(".active").removeClass("active");
+      $('#navbar a[href="#' + anchorLink + '"]').parent().addClass("active");
     },
     onLeave: function(index, nextIndex, direction) {
       var leavingSection = $(this);
