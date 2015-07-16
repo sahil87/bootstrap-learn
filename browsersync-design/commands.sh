@@ -6,4 +6,3 @@
 #npm install
 
 gulp
-#browser-sync start --config browser-sync-config.js
