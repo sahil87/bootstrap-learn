@@ -18,19 +18,20 @@ body {
 
 #page1 #logo {
   display: block;
-  width: 400px;
-  padding-top: 17%;
+  width: 300px;
+  padding-top: 25%;
   margin-left: auto;
   margin-right: auto;
 }
 
 #page1 #text-container {
   position: relative;
+  top: 40px;
   display: block;
   //width: 100%;
   //height: 100%;
   //padding-top: 50px;
-  font-size: 400%;
+  font-size: 250%;
   font-weight: bold;
   color: white;
   height: 100%;
@@ -42,12 +43,12 @@ body {
 }
 
 #text1, #text2, #text3, #divider1, #divider2 { position: absolute; display: block; width: 100%; text-align: center }
-#divider1, #divider2 { top: -67px;}
-#text1    { left: -290px; }
-#divider1 { left: -142px; }
+#divider1, #divider2 { top: -42px;}
+#text1    { left: -200px; }
+#divider1 { left: -100px; }
 #text2    { left: 0px; }
-#divider2 { left: 142px; }
-#text3    { left: 280px; }
+#divider2 { left: 100px; }
+#text3    { left: 200px; }
 
 #divider1, #divider2 {
   font-size: 2em;
