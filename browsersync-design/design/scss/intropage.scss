@@ -9,6 +9,44 @@ body {
   opacity: 0;
 }
 
+#navbar-container {
+  background-color: rgba(0, 24, 80, 0.30);
+  box-shadow: 0px -1px 10px #bbb;
+  border: 0;
+}
+
+#navbar-logo {
+  opacity: 0.5;
+  width: 175px;
+  height: 50px;
+}
+
+.navbar-brand{
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 100px;
+  padding-left: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #ccc;
+  text-shadow: 1px 1px 1px #000;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ccc;
+  background-color: rgba(255,255,255,0.5);
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  text-shadow: 1px 1px 1px #000;
+  background-color: rgba(255,255,255,0.5);
+}
+
+
+
 #page1 {
   background: url("../images/page1.jpg");
   background-color: white;
@@ -53,7 +91,6 @@ body {
 }
 #page3 .fp-tableCell {
   vertical-align: baseline;
-
   //  background: url("../images/page3-1.jpg");
   //  background-repeat: no-repeat;
 }
