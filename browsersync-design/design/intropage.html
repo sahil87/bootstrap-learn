@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="Sports, Realtime">
+  <meta name="description" content="Sports, Realtime and More">
   <meta name="author" content="">
   <link rel="icon" href="images/favicon2.ico">
 
@@ -20,33 +20,31 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   <!-- Bootstrap core CSS -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:700,400,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="../bower_components/fullpage.js/jquery.fullPage.css" rel="stylesheet">
-  <link href="../bower_components/animate.css/animate.min.css" rel="stylesheet" >
-  <link href='http://fonts.googleapis.com/css?family=Roboto:700,400,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href="../bower_components/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../bower_components/jquery-collagePlus/css/transitions.css" rel="stylesheet">
   <link href="css/intropage.css" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
   <script src="../bower_components/fullpage.js/jquery.fullPage.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-				anchors: ['firstPage', 'secondPage', 'thridPage', 'fourthPage', 'fifthPage'],
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['First', 'Second', 'Third']
-			});
-    });
-  </script>
-
+  <script src="js/intropage.js"></script>
+  <script src="../bower_components/jquery-collagePlus/jquery.collagePlus.min.js"></script>
+  <script src="../bower_components/jquery-collagePlus/extras/jquery.removeWhitespace.min.js"></script>
 </head>
 
 <body>
-  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <div id="fullpage">
     <div class="section text-center" id="page1">
       <img class="animated fadeIn" id="logo" src="images/logo.png" alt="Logo">
-      <div>A sports news website covering Indian sportspersons for the Indian sports fan
+      <div class="container">
+        <span class="page1-text" id="text1">Real Time</span>
+        <span class="page1-text" id="divider1">.</span>
+        <span class="page1-text" id="text2">All Sports</span>
+        <span class="page1-text" id="divider2">.</span>
+        <span class="page1-text" id="text3">And More</span>
       </div>
     </div>
     <div class="section" id="page2">
@@ -54,6 +52,36 @@
     </div>
     <div class="section" id="page3">
       <div>Bringing your idols closer to you</div>
+      <div class="collage">
+        <div class="image_wrapper">
+          <img src="images/page3-1.jpg" alt="image1" />
+        </div>
+        <div class="image_wrapper">
+          <img src="images/page3-2.jpg" alt="image2" />
+        </div>
+        <div class="image_wrapper">
+          <img src="images/page3-3.jpg" alt="image3" />
+        </div>
+        <div class="image_wrapper">
+          <img src="images/page3-4.jpg" alt="image4" />
+        </div>
+        <div class="image_wrapper">
+          <img src="images/page3-5.jpg" alt="image5" />
+        </div>
+        <div class="image_wrapper">
+          <img src="images/page3-6.jpg" alt="image6" />
+        </div>
+        <div class="image_wrapper">
+          <img src="images/page3-7.jpg" alt="image7" />
+        </div>
+        <div class="image_wrapper">
+          <img src="images/page3-8.jpg" alt="image8" />
+        </div>
+        <div class="image_wrapper">
+          <img src="images/page3-9.jpg" alt="image9" />
+        </div>
+      </div>
+
     </div>
     <div class="section" id="page4">
       <div>Real time</div>
@@ -105,6 +133,7 @@
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

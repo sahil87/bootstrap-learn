@@ -18,7 +18,7 @@ module.exports = {
             "port": 8080
         }
     },
-    "files": ["design/*.html", "design/css/*.css"],
+    "files": ["design/*.html", "design/css/*.css", "design/js/*.js"],
     "watchOptions": {
       usePolling: true
     },

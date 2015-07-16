@@ -1,3 +1,13 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.collage .image_wrapper {
+  /* ensures padding at the bottom of the image is correct */
+  vertical-align: bottom;
+  /* hide the images until the plugin has run. the plugin will reveal the images*/
+  opacity: 0;
+}
+
 #page1 {
   background: url("../images/page1.jpg");
   background-repeat: no-repeat;
@@ -8,23 +18,33 @@
   width: 400px;
 }
 
+#page1 .container {
+  padding-top: 50px;
+  font-size: 4em;
+  font-weight: bold;
+  color: white;
+}
+
+.page1-text {
+  opacity: 0;
+}
+
 #page2 {
   background: url("../images/page2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
+#page3 .fp-tableCell {
+  vertical-align: baseline;
 
-#page3 {
-  background: url("../images/page3-1.jpg");
-  background-repeat: no-repeat;
+  //  background: url("../images/page3-1.jpg");
+  //  background-repeat: no-repeat;
 }
-
 #page4 {
-  background: url("../images/page4-2.jpg");
+  background: url("../images/page4-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 #page5 {
   background: url("../images/page5-2.jpg");
   background-repeat: no-repeat;
