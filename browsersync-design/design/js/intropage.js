@@ -30,7 +30,6 @@ SC.page3Animation = function() {
 //});
 
 $(document).ready(function() {
-  $('body').scrollspy({ target: '#navbar-example' });
   $('#fullpage').fullpage({
     anchors: ['sportscafe', 'allsports', 'youridols', 'whyus', 'aboutus'],
     navigation: true,
