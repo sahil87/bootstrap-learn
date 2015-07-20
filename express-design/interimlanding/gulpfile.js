@@ -2,6 +2,7 @@
 //npm install --save-dev gulp gulp-if gulp-uglify minimist gulp-sass browser-sync
 
 var gulp = require('gulp');
+var gulpDevelopServer = require("gulp-develop-server");
 var browserSync = require('browser-sync');
 //var nodemon = require('gulp-nodemon');
 //var sass = require('gulp-sass');
@@ -33,17 +34,11 @@ var minimistOptions = {
 
 var options = minimist(process.argv.slice(2), minimistOptions);
 
-
-var exec = require('child_process').exec;
-gulp.task('express', function(cb) {
-  exec('node bin/www', function(err, stdout, stderr) {
-    //exec('ls', function(err, stdout, stderr) {
-
-    console.log(stdout);
-    console.log(stderr);
-    cb(err);
-  });
-});
+// gulp.task('express:start', function(cb) {
+//     //cmd: "DEBUG=interimlanding:* npm start",
+//   gulpDevelopServer.listen( { path: './bin/www' } );
+//
+// });
 
 gulp.task('browser-sync', function() {
   console.log("Starting browser-sync.");
