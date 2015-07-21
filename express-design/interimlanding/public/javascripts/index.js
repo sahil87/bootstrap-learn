@@ -1,6 +1,6 @@
 var SC = {};
 SC.page3Animated = false;
-SC.page3Animation = function() {
+SC.page3Animate = function() {
   //alert("trying to animate");
   $('.collage').removeWhitespace().collagePlus({
     allowPartialLastRow: true,
@@ -38,21 +38,35 @@ $(document).ready(function() {
     //afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
     afterLoad: function(anchorLink, index) {
       var loadedSlide = $(this);
-      if (anchorLink == 'youridols') {
-        //alert("on third page");
-        SC.page3Animation();
-      } else if (anchorLink == 'sportscafe') {
-        setTimeout(SC.page1Animate, 200);
+      switch(anchorLink) {
+
+        case "sportscafe": {
+          SC.page1Animate();
+          break;
+        }
+        case "allsports": {
+            SC.page2Animate();
+            break;
+        }
+        case "youridols": {
+            SC.page3Animate();
+            break;
+        }
+
+        default:
+          break;
       }
       $("#navbar").find(".active").removeClass("active");
+      $("#navbar").find("a:hover").removeClass("a:hover");
+      $("#navbar").find("a:focus").removeClass("a:focus");
       $('#navbar a[href="#' + anchorLink + '"]').parent().addClass("active");
     },
     onLeave: function(index, nextIndex, direction) {
       var leavingSection = $(this);
       if (index == 1) {
-        SC.testAnim('#text-container',"hinge");
+        SC.testAnim('#page1-text-container',"hinge");
         setTimeout(function(){
-          $("#text-container").children().addClass("page1-text");
+          $("#page1-text-container").children().addClass("page1-text");
         }, 500);
       }
     }
@@ -60,19 +74,20 @@ $(document).ready(function() {
 });
 
 SC.testAnim = function(element, x) {
-  //alert("Animating with " + element + x);
   $(element).removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
     $(this).removeClass();
   });
 };
 
 SC.page1Animate = function() {
-  SC.testAnim('#logo',"flipInY");
-  SC.testAnim('#text1',"slideInLeft");
-  setTimeout(function(){SC.testAnim('#divider1', "bounceInDown");}, 500);
-  setTimeout(function(){SC.testAnim('#text2', "fadeInUp");}, 1000);
-  setTimeout(function(){SC.testAnim('#divider2', "bounceInDown");}, 1500);
-  setTimeout(function(){SC.testAnim('#text3', "slideInRight");}, 2000);
-  //$('#text2').wait(5000).addClass("animated fadeIn");
-  //$('#text3').wait(2000).addClass("animated fadeIn");
+  setTimeout(function(){SC.testAnim('#page1-logo', "fadeIn");}, 3000);
+  setTimeout(function(){SC.testAnim('#page1-text1', "fadeInLeft");}, 2000);
+  setTimeout(function(){SC.testAnim('#page1-divider1', "fadeIn");}, 2800);
+  setTimeout(function(){SC.testAnim('#page1-text2', "fadeInUp");}, 2200);
+  setTimeout(function(){SC.testAnim('#page1-divider2', "fadeIn");}, 2800);
+  setTimeout(function(){SC.testAnim('#page1-text3', "fadeInRight");}, 2200);
+};
+
+SC.page2Animate = function() {
+  setTimeout(function(){SC.testAnim('#page2-text', "zoomIn");}, 1000);
 };

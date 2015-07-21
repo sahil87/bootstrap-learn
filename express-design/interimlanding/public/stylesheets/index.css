@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Orbitron", sans-serif;
   padding-top: 100px;
 }
 
@@ -26,6 +26,8 @@ body {
   padding-left: 0;
 }
 .navbar-default .navbar-nav > li > a {
+  font-size: 1.2em;
+  font-weight: bold;
   color: #ccc;
   text-shadow: 1px 1px 1px #000;
 }
@@ -39,62 +41,81 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
 }
 #page1 {
-  background: url("../images/page1.jpg");
+  background: url("../images/page1-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
-#page1 #logo {
+#page1 #page1-logo {
   display: block;
   width: 300px;
   padding-top: 200px;
   margin-left: auto;
   margin-right: auto;
 }
-#page1 #text-container {
+#page1 #page1-text-container {
   position: relative;
   display: block;
   height: 100%;
   top: 60px;
   color: white;
   font-weight: bold;
-  font-size: 165%;
+  font-size: 133%;
   text-shadow: 1px 1px 0px #333, 2px 2px 15px #999;
   overflow-x: hidden;
 }
-.page1-text {
+
+.page1-text, .page1-logo {
   opacity: 0;
 }
-#text1, #text2, #text3, #divider1, #divider2 {
+
+#page1-logo {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+#page1-text1, #page1-text2, #page1-text3, #page1-divider1, #page1-divider2 {
   position: absolute;
   display: block;
   width: 100%;
   text-align: center
 }
-#divider1, #divider2 {
-  top: -28px;
-  font-size: 2em;
+#page1-divider1, #page1-divider2 {
+  top: -22px;
+  font-size: 2.1em;
 }
-#text1 {
+#page1-text1 {
   left: -120px;
 }
-#divider1 {
-  left: -59px;
+#page1-divider1 {
+  left: -61px;
 }
-#text2 {
+#page1-text2 {
   left: 0px;
 }
-#divider2 {
+#page1-divider2 {
   left: 61px;
 }
-#text3 {
+#page1-text3 {
   left: 120px;
 }
 #page2 {
   background: url("../images/page2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  //background-size: contain;
 }
+
+#page2-text {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 0px #333, 3px 3px 20px #999;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
 #page3 .fp-tableCell {
   vertical-align: baseline;
   //  background: url("../images/page3-1.jpg");
