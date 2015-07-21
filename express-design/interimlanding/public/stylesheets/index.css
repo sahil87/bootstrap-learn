@@ -41,7 +41,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
 }
 #page1 {
-  background: url("../images/page1-2.jpg");
+  background: url("../images/page1-2-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -100,7 +100,7 @@ body {
   left: 120px;
 }
 #page2 {
-  background: url("../images/page2.jpg");
+  background: url("../images/page2-min.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -116,7 +116,7 @@ body {
 }
 
 #page3  {
-  background: url("../images/page3.jpg");
+  background: url("../images/page3-min.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -131,10 +131,22 @@ body {
   animation-duration: 2s;
 }
 
+#page4-text {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 900;
+  color: white;
+//  text-shadow: 2px 2px 0px #333, 3px 3px 20px #999;
+}
+
 #page4 {
   background: url("../images/page4-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#page4 .panel-default,#page4 .panel-default,#page4 .list-group-item {
+  background-color: rgba(255,255,255,0);
 }
 
 #page5 {
