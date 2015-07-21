@@ -44,3 +44,6 @@ gulp.task('browser-sync', function() {
   console.log("Starting browser-sync.");
   browserSync.init(require('./browser-sync-config.js'));
 });
+
+
+gulp.task('default', ['browser-sync'], function() {});

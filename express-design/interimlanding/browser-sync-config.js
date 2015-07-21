@@ -18,9 +18,9 @@ module.exports = {
       "port": 8080
     }
   },
-  "files": ["*.html",
-    "stylesheets/*.css",
-    "javascripts/*.js"
+  "files": ["public/*.html",
+    "public/stylesheets/*.css",
+    "public/javascripts/*.js"
   ],
   "watchOptions": {
     usePolling: true
