@@ -1,0 +1,112 @@
+body {
+  font-family: "Roboto", sans-serif;
+  padding-top: 100px;
+}
+
+.collage .image_wrapper {
+  /* ensures padding at the bottom of the image is correct */
+  vertical-align: bottom;
+  /* hide the images until the plugin has run. the plugin will reveal the images*/
+  opacity: 0;
+}
+#navbar-container {
+  background-color: rgba(0, 24, 80, 0.30);
+  box-shadow: 0px -1px 10px #bbb;
+  border: 0;
+}
+#navbar-logo {
+  opacity: 0.5;
+  width: 175px;
+  height: 50px;
+}
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 100px;
+  padding-left: 0;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ccc;
+  text-shadow: 1px 1px 1px #000;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ccc;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  text-shadow: 1px 1px 1px #000;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#page1 {
+  background: url("../images/page1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+#page1 #logo {
+  display: block;
+  width: 300px;
+  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#page1 #text-container {
+  position: relative;
+  display: block;
+  height: 100%;
+  top: 60px;
+  color: white;
+  font-weight: bold;
+  font-size: 165%;
+  text-shadow: 1px 1px 0px #333, 2px 2px 15px #999;
+  overflow-x: hidden;
+}
+.page1-text {
+  opacity: 0;
+}
+#text1, #text2, #text3, #divider1, #divider2 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center
+}
+#divider1, #divider2 {
+  top: -28px;
+  font-size: 2em;
+}
+#text1 {
+  left: -120px;
+}
+#divider1 {
+  left: -59px;
+}
+#text2 {
+  left: 0px;
+}
+#divider2 {
+  left: 61px;
+}
+#text3 {
+  left: 120px;
+}
+#page2 {
+  background: url("../images/page2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#page3 .fp-tableCell {
+  vertical-align: baseline;
+  //  background: url("../images/page3-1.jpg");
+  //  background-repeat: no-repeat;
+}
+#page4 {
+  background: url("../images/page4-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#page5 {
+  background: url("../images/page5-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
