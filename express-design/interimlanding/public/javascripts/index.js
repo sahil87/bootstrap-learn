@@ -1,33 +1,4 @@
 var SC = {};
-SC.page3Animated = false;
-SC.page3Animate = function() {
-  //alert("trying to animate");
-  $('.collage').removeWhitespace().collagePlus({
-    allowPartialLastRow: true,
-    effect: 'effect-6',
-    targetHeight: 450
-  });
-};
-
-// SPORTSCAFE.resizeTimer = null;
-// SPORTSCAFE.page3Animate = function() {
-//     if (!this.page3Animated) {
-//       this.page3Animation();
-//       this.page3Animated = true;
-//     } else {
-//       var collage = $('.collage');
-//       var newCollage = collage.cloneNode(true);
-//       collage.parentNode.replaceChild(newCollage, collage);
-//       //$('.collage .image_wrapper').css("opacity", 0);
-//       //this.page3Animation();
-//       // set a timer to re-apply the plugin
-//       if (this.resizeTimer) clearTimeout(resizeTimer);
-//       this.resizeTimer = setTimeout(this.page3Animation, 2000);
-//     }
-//   }
-//$(window).load(function () {
-//  SPORTSCAFE.page3Animation();
-//});
 
 $(document).ready(function() {
   $('#fullpage').fullpage({
@@ -89,5 +60,9 @@ SC.page1Animate = function() {
 };
 
 SC.page2Animate = function() {
-  setTimeout(function(){SC.testAnim('#page2-text', "zoomIn");}, 1000);
+  setTimeout(function(){SC.testAnim('#page2-text', "zoomIn");}, 500);
+};
+
+SC.page3Animate = function() {
+  setTimeout(function(){SC.testAnim('#page3-text', "bounceInLeft");}, 0);
 };

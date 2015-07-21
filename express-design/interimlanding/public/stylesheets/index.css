@@ -59,8 +59,8 @@ body {
   height: 100%;
   top: 60px;
   color: white;
-  font-weight: bold;
-  font-size: 133%;
+  font-weight: 900;
+  font-size: 160%;
   text-shadow: 1px 1px 0px #333, 2px 2px 15px #999;
   overflow-x: hidden;
 }
@@ -81,20 +81,20 @@ body {
   text-align: center
 }
 #page1-divider1, #page1-divider2 {
-  top: -22px;
-  font-size: 2.1em;
+  top: -25px;
+  font-size: 2em;
 }
 #page1-text1 {
   left: -120px;
 }
 #page1-divider1 {
-  left: -61px;
+  left: -42px;
 }
 #page1-text2 {
   left: 0px;
 }
 #page1-divider2 {
-  left: 61px;
+  left: 45px;
 }
 #page1-text3 {
   left: 120px;
@@ -103,7 +103,6 @@ body {
   background: url("../images/page2.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  //background-size: contain;
 }
 
 #page2-text {
@@ -116,18 +115,39 @@ body {
   animation-duration: 4s;
 }
 
-#page3 .fp-tableCell {
-  vertical-align: baseline;
-  //  background: url("../images/page3-1.jpg");
-  //  background-repeat: no-repeat;
+#page3  {
+  background: url("../images/page3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
+
+#page3-text {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 0px #333, 3px 3px 20px #999;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
 #page4 {
   background: url("../images/page4-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 #page5 {
-  background: url("../images/page5-2.jpg");
+  background-color: #333;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#page5-text {
+  color: white;
+}
+
+#page5-contactus-text {
+  background: url("../images/page5-conversation.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
