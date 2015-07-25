@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Live Scores!!</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" rel="stylesheet"> -->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <![endif]-->
+
+      <!-- build:css styles/main.css -->
+      <link rel="stylesheet" href="css/scorer2.css">
+      <!-- endbuild-->
+
+      <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
+      <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+      <!-- endbuild -->
+
+      <!-- will be replaced with elements/elements.vulcanized.html -->
+      <link rel="import" href="../bower_components/polymer/polymer.html">
+      <!-- endreplace-->
+</head>
+
+<body>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <link href="css/scorer.css" rel="stylesheet" />
+  <div class="container">
+    <div class="row">
+      <!-- For raid by raid info -->
+      <div class="col-md-5 col-xs-12">
+
+
+        <h2>Raid by raid info</h2>
+        <table class="table table-hover">
+          <tr>
+            <th>Raid No:</th>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>Raiding team:</th>
+            <td>Delhi</td>
+          </tr>
+          <tr>
+            <th>Event:</th>
+            <td>
+              <!-- Single button -->
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Result
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Empty Raid</a></li>
+                  <li><a href="#">Succesful Raid</a></li>
+                  <li><a href="#">Succesful Tackle</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Team lists -->
+        <div class="row">
+
+          <div class="col-md-6 col-xs-12">
+            <table class="table table-condensed">
+              <tr>
+                <th> Delhi Team- Raiding </th>
+                <th>Raider?</th>
+              </tr>
+              <tr>
+                <td class="text-center">Amit Sing</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Dadaso Balaso Awad</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Jasmer Singh</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Kashling Adake</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Punit Kumar Teotia</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Shrikant Tewthia</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Surjeet Narwal</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <table class="table table-condensed">
+              <tr>
+                <th>Bengaluru -Defenders
+                </th>
+                <th>Touch</th>
+                <th>Tackled</th>
+              </tr>
+              <tr>
+                <td class="text-center">Ajay Thakur</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">T</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Tck</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Dharmaraj Cheralathan</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">T</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Tck</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Gurpreet Singh</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">T</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Tck</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Manjit Chillar</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">T</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Tck</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Parmod Singh</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">T</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Tck</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Rajesh Mandal</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">T</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Tck</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Sunil Hanumanthappa</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">T</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Tck</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- END Team lists-->
+
+        <!-- Alternate Design
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <div class="btn-group-vertical btn-block" role="group" aria-label="Raiding team">
+              <div class="panel-title">Test</div>
+              <button type="button" class="btn btn-primary inactive">Dabang Delhi</button>
+              <button type="button" class="btn btn-default">Amit Singh</button>
+              <button type="button" class="btn btn-default">Dadaso Balaso Awad</button>
+              <button type="button" class="btn btn-default">Jasmer Singh</button>
+              <button type="button" class="btn btn-default">Kashling Adake</button>
+              <button type="button" class="btn btn-default">Punit Kumar Teotia</button>
+              <button type="button" class="btn btn-default">Shrikant Tewthia</button>
+              <button type="button" class="btn btn-default">Surjeet Narwal</button>
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-info">U Mumba - Raiding Team</a>
+              <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+              <a href="#" class="list-group-item">Morbi leo risus</a>
+              <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+              <a href="#" class="list-group-item">Vestibulum at eros</a>
+            </div>
+          </div>
+        </div>
+        -->
+
+      </div>
+      <!-- END raid by raid info -->
+      <!-- For Events -->
+      <div class="col-md-7 col-xs-12">
+        <h2>Substitutions and Cards</h2>
+        <table class="table table-hover">
+          <tr>
+            <th></th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Raiding team:</th>
+            <td>Delhi</td>
+          </tr>
+          <tr>
+            <th>Event:</th>
+            <td>
+              <!-- Single button -->
+
+            </td>
+          </tr>
+          <tr>
+            <th>Event:</th>
+            <td>
+              <!-- Single button -->
+
+            </td>
+          </tr>
+        </table>
+
+        <!-- Team lists -->
+        <div class="row">
+
+          <div class="col-md-6 col-xs-12">
+            <table class="table table-condensed">
+              <tr>
+                <th> Delhi Team Squad
+                </th>
+                <th>SUBS</th>
+                <th>Cards</th>
+                <th>Cards</th>
+                <th>Cards</th>
+              </tr>
+              <tr>
+                <td class="text-center">Amit Sing</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Out</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">G</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Y</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Dadaso Balaso Awad</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Out</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">G</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Y</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Jasmer Singh</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Out</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">G</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Y</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Kashling Adake</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Out</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">G</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Y</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Punit Kumar Teotia</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Out</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">G</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Y</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Shrikant Tewthia</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Out</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">G</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Y</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Surjeet Narwal</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Out</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">G</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Y</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <table class="table table-condensed">
+              <tr>
+                <th>Bengaluru Squad
+                </th>
+                <th>SUBS</th>
+                <th>Cards</th>
+                <th>Cards</th>
+                <th>Cards</th>
+              </tr>
+              <tr>
+                <td class="text-center">Ajay Thakur</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Out</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">G</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Y</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Dharmaraj Cheralathan</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Out</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">G</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Y</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Gurpreet Singh</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Out</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">G</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Y</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Manjit Chillar</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Out</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">G</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Y</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Parmod Singh</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Out</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">G</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Y</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Rajesh Mandal</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Out</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">G</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Y</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Sunil Hanumanthappa</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Out</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">G</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">Y</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">R</button>
+                </td>
+              </tr>
+
+            </table>
+
+          </div>
+
+        </div>
+        <div class="row">
+
+          <div class="col-md-6 col-xs-12">
+            <table class="table table-condensed">
+              <tr>
+                <th> Delhi Team Squad
+                </th>
+                <th>SUBS</th>
+
+              </tr>
+              <tr>
+                <td class="text-center">Amit Sing</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">In</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Dadaso Balaso Awad</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">In</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Jasmer Singh</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">In</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Kashling Adake</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">In</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Punit Kumar Teotia</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">In</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Shrikant Tewthia</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">In</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Surjeet Narwal</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">In</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <table class="table table-condensed">
+              <tr>
+                <th>Bengaluru Squad
+                </th>
+                <th>SUBS</th>
+
+              </tr>
+              <tr>
+                <td class="text-center">Ajay Thakur</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">In</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Dharmaraj Cheralathan</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">In</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Gurpreet Singh</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">In</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Manjit Chillar</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">In</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Parmod Singh</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">In</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Rajesh Mandal</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">In</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center">Sunil Hanumanthappa</td>
+                <td>
+                  <button type="button" class="btn btn-block btn-default">In</button>
+                </td>
+
+              </tr>
+
+            </table>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- END events -->
+    </div>
+  </div>
+
+</body>
+
+</html>
