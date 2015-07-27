@@ -20,65 +20,13 @@
     <!-- Bootstrap core CSS -->
     <link href='http://fonts.googleapis.com/css?family=Lato:400|Orbitron:400,500,700,900' rel='stylesheet' type='text/css'>
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../bower_components/fullpage.js/jquery.fullPage.css" rel="stylesheet">
+    <link href="../bower_components/pagepiling.js/jquery.pagepiling.css" rel="stylesheet">
     <link href="../bower_components/animate.css/animate.css" rel="stylesheet">
-    <link href="../bower_components/jquery-collagePlus/css/transitions.css" rel="stylesheet">
     <link href="stylesheets/index.css" rel="stylesheet">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
-    <script src="../bower_components/fullpage.js/jquery.fullPage.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="javascripts/index.js"></script>
-    <script src="../bower_components/jquery-collagePlus/jquery.collagePlus.min.js"></script>
-    <script src="../bower_components/jquery-collagePlus/extras/jquery.removeWhitespace.min.js"></script>
-    <!-- start Mixpanel -->
-    <script type="text/javascript">
-    (function(f, b) {
-        if (!b.__SV) {
-            var a, e, i, g;
-            window.mixpanel = b;
-            b._i = [];
-            b.init = function(a, e, d) {
-                function f(b, h) {
-                    var a = h.split(".");
-                    2 == a.length && (b = b[a[0]], h = a[1]);
-                    b[h] = function() {
-                        b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
-                    }
-                }
-                var c = b;
-                "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
-                c.people = c.people || [];
-                c.toString = function(b) {
-                    var a = "mixpanel";
-                    "mixpanel" !== d && (a += "." + d);
-                    b || (a += " (stub)");
-                    return a
-                };
-                c.people.toString = function() {
-                    return c.toString(1) + ".people (stub)"
-                };
-                i =
-                    "disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user"
-                    .split(" ");
-                for (g = 0; g < i.length; g++) f(c, i[g]);
-                b._i.push([a, e, d])
-            };
-            b.__SV = 1.2;
-            a = f.createElement("script");
-            a.type = "text/javascript";
-            a.async = !0;
-            a.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
-            e = f.getElementsByTagName("script")[0];
-            e.parentNode.insertBefore(a, e)
-        }
-    })(document, window.mixpanel || []);
-    mixpanel.init("799210327bbec1a4f6d4663f52edd9e3");
-    </script>
-    <!-- end Mixpanel -->
-    <script type="text/javascript">
-    mixpanel.track("View interim home page");
-    </script>
+    <script src="../bower_components/pagepiling.js/jquery.pagepiling.min.js"></script>
     <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -98,7 +46,7 @@
 </head>
 
 <body>
-    <div id="fullpage">
+    <div id="pagepiling">
         <div class="section">
             <div id="page1">
                 <img id="page1-logo" class="page1-logo" src="images/logo.png" alt="Logo">
@@ -192,12 +140,12 @@
                 </a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#sportscafe">Home</a></li>
-                    <li><a href="#allsports">All Sports</a></li>
-                    <li><a href="#youridols">Your Idols</a></li>
-                    <li><a href="#whyus">Why us?</a></li>
-                    <li><a href="#aboutus">About</a></li>
+                <ul id="menuanchor" class="nav navbar-nav">
+                    <li data-menuanchor="sportscafe" class="active"><a href="#sportscafe">Home</a></li>
+                    <li data-menuanchor="allsports"><a href="#allsports">All Sports</a></li>
+                    <li data-menuanchor="youridols"><a href="#youridols">Your Idols</a></li>
+                    <li data-menuanchor="whyus"><a href="#whyus">Why us?</a></li>
+                    <li data-menuanchor="aboutus"><a href="#aboutus">About</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
