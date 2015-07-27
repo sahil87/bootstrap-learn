@@ -31,7 +31,11 @@ $(document).ready(function() {
             SC.page3Animate();
             break;
           }
-
+        case "whyus":
+          {
+            SC.page4Animate();
+            break;
+          }
         default:
           break;
       }
@@ -91,5 +95,19 @@ SC.page2Animate = function() {
 SC.page3Animate = function() {
   setTimeout(function() {
     SC.testAnim('#page3-text', "bounceInLeft");
+  }, 0);
+};
+SC.page4Animate = function() {
+  setTimeout(function() {
+    SC.testAnim('#page4-panel-left', "bounceInLeft");
+    $(function() {
+      $('.page4-panel-left-text').textillate({ in: { effect: 'rollIn' } });
+    });
+    $(function() {
+      $('.page4-panel-right-text').textillate({ in: { effect: 'rollIn', reverse: true } });
+    });
+  }, 0);
+  setTimeout(function() {
+    SC.testAnim('#page4-panel-right', "bounceInRight");
   }, 0);
 };
