@@ -68,22 +68,22 @@ SC.testAnim = function(element, x) {
 SC.page1Animate = function() {
   setTimeout(function() {
     SC.testAnim('#page1-logo', "fadeIn");
-  }, 3000);
+  }, 1000);
   setTimeout(function() {
     SC.testAnim('#page1-text1', "fadeInLeft");
-  }, 2000);
+  }, 1000);
   setTimeout(function() {
     SC.testAnim('#page1-divider1', "fadeIn");
-  }, 2800);
+  }, 1800);
   setTimeout(function() {
     SC.testAnim('#page1-text2', "fadeInUp");
-  }, 2200);
+  }, 1200);
   setTimeout(function() {
     SC.testAnim('#page1-divider2', "fadeIn");
-  }, 2800);
+  }, 1800);
   setTimeout(function() {
     SC.testAnim('#page1-text3', "fadeInRight");
-  }, 2200);
+  }, 1200);
 };
 
 SC.page2Animate = function() {
