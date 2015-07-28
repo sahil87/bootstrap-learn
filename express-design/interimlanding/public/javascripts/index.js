@@ -89,7 +89,7 @@ SC.page1Animate = function() {
 SC.page2Animate = function() {
   setTimeout(function() {
     SC.testAnim('#page2-text', "zoomIn");
-  }, 500);
+  }, 0);
 };
 
 SC.page3Animate = function() {
