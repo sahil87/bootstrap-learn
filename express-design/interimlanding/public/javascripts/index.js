@@ -2,14 +2,14 @@ var SC = {};
 
 $(document).ready(function() {
   $('#pagepiling').pagepiling({
-    anchors: ['sportscafe', 'allsports', 'youridols', 'whyus', 'aboutus'],
+    anchors: ['sportscafe', 'allsports', 'youridols', 'aboutus'],
     //animateAnchor: true,
     menu: "#menuanchor",
     navigation: {
       'textColor': '#000',
       'bulletsColor': '#000',
       'position': 'right',
-      'tooltips': ['SportCafe', 'All Sports', 'Your Idols', 'Why Us', 'About']
+      'tooltips': ['SportCafe', 'All Sports', 'Your Idols', 'About']
     },
     //afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
     afterLoad: function(anchorLink, index) {
@@ -44,15 +44,15 @@ $(document).ready(function() {
       // $("#navbar").find("a:focus").removeClass("a:focus");
       // $('#navbar a[href="#' + anchorLink + '"]').parent().addClass("active");
     },
-    onLeave: function(index, nextIndex, direction) {
-      var leavingSection = $(this);
-      if (index == 1) {
-        SC.testAnim('#page1-text-container', "hinge");
-        setTimeout(function() {
-          $("#page1-text-container").children().addClass("page1-text");
-        }, 500);
-      }
-    },
+    // onLeave: function(index, nextIndex, direction) {
+    //   var leavingSection = $(this);
+    //   if (index == 1) {
+    //     SC.testAnim('#page1-text-container', "hinge");
+    //     setTimeout(function() {
+    //       $("#page1-text-container").children().addClass("page1-text");
+    //     }, 500);
+    //   }
+    // },
     afterRender: function() {
       SC.page1Animate();
     }
